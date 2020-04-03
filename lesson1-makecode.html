@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>micro:bit lesson plans</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto Condensed:100,300,400,500,700,900" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Lesson 1: introduction to the BBC micro:bit</h1>
+  </header>
+
+  <div id="microbit-intro" class="left">
+    <br>
+    <h3>Step 1: What is a BBC micro:bit?</h3>
+    <p>A micro:bit is a small microcontroller with built-in features such as:</p>
+    <ul>
+      <li>display</li>
+      <li>buttons</li>
+      <li>motion sensors</li>
+      <li>temperature sensor</li>
+      <li>wireless transmission</li>
+      <li>connection pins</li>
+    </ul>
+    <p>All of these features are programmable, and you will introduce them all to your students though these lessons.</p>
+    <p>More details and a diagram can be seen on <a href="https://microbit.org/get-started/user-guide/overview/" target="_blank">microbit.org</a>.</p>
+    <p>During lesson 1, you will be using the <strong>display</strong> and the <strong>buttons</strong>.</p>
+  </div>
+
+  <div id="makecode-intro" class="left">
+    <br>
+    <h3>Step 2: The MakeCode Editor</h3>
+    <p>To write code for the micro:bit, open the MakeCode editor by visiting <a href=https://makecode.microbit.org target="_blank">https://makecode.microbit.org</a>, then clicking <strong>New Project</strong>.</p>
+    <div class="additional">
+      <p>MakeCode runs in a web browser, and needs an internet connection the first time it is accessed. It will then be cached in your browser so, if necessary, internet access can be revokes and it will still run.</p>
+      <p>Alternatively, you can download apps for:</p>
+      <ul>
+        <li><a href="https://www.microsoft.com/en-gb/p/makecode-for-micro-bit/9pjc7sv48lcx?&activetab=pivot:overviewtab" target="_blank">Windows 10</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.samsung.microbit" target="_blank">Android mobile / tablets</a></li>
+        <li><a href="https://apps.apple.com/gb/app/micro-bit/id1092687276" target="_blank">iOS mobile / tablets</a></li>
+      </ul>
+      <p>The apps work similarly, but for the rest of these instructions it is assumed that you are using MakeCode in a browser.</p>
+    </div>
+    <img src=".\images\MakeCode-Editor-Labeled.png" alt="MakeCode Editor with labels" width="auto" height="auto">
+    <ol type="A">
+      <li>Click the <strong>Home</strong> button to access tutorials, and to start a new project.</li>
+      <li>Click here to switch between <strong>Blocks</strong> programming (which will be used throughout these lessons), and <strong>Javascript</strong> programming.</li>
+      <li>The <strong>Settings</strong> button will be used to pair micro:bits with the computer (see later instructions).</li>
+      <li>The <strong>Simulator</strong> allows you to test your code before downloading it to a physical micro:bit.<br>On smaller screens this may not be visible by default, so click the grey arrow on the right to open and close this section.</li>
+      <li>Drag and drop blocks from the <strong>Menu</strong> to create your programs.</li>
+      <li>Drop blocks into this section to form your programs. To delete blocks, drag and drop them onto the Menu.</li>
+      <li>Clicking the <strong>Download</strong> button will allow you to run code on a physical micro:bit (see later instructions).</li>
+      <li>Use this box to <strong>Rename</strong> your file.</li>
+    </ol>
+  </div>
+
+  <div id="display" class="left">
+    <br>
+    <h3>Step 3: Displaying Pictures & Messages</h3>
+    <p>When you create a new MakeCode project, two blocks will already be on the screen for you to use:</p>
+    <ul>
+      <li>Inside the <strong><font color=#1E90FF>on start</font></strong> loop is where you will place blocks you want to happen at the beginning of the program (similar to 'when the green flag is clicked' in Scratch).</li>
+      <li>The <strong><font color=#1E90FF>forever</font></strong> loop is where you will place blocks that you want to repeat until the program is restarted.
+    </ul>
+    <p>These two blocks do not do anything on their own - you must drag and drop blocks of code inside them.</p>
+    <p>The blocks to show pictures and messages on the micro:bit's display can be found in the <strong><font color=#1E90FF>Basic</font></strong> menu.</p>
+    <ul>
+      <li>Use the <strong><font color=#1E90FF>show icon</font></strong> block to choose from a collection of pre-made images.</li>
+      <li>The <strong><font color=#1E90FF>show leds</font></strong> block lets you create images by clicking the squares to turn on specific LEDs.</li>
+      <li>To scroll messages, use the <strong><font color=#1E90FF>show string</font></strong> block. Click inside the speech marks to change the text.
+    </ul>
+
+    <div class="additional">
+      <p>A string is a data type in programming languages that holds information (including words and numbers) inside speech marks or apostrophes.</p>
+      <p>This is in comparison to an integer (a whole number), which can only be a number and therefore is easier to do maths with.</p>
+      <p>Both data types are useful for different things, and we will use both in future lessons.</p>
+    </div>
+
+    <p><strong>Introduce your students to these blocks, then give them time to tinker and explore the options within the <strong><font color=#1E90FF>Basic</font></strong> menu. Their code will run in the Simulator.</strong></p>
+    <p>Encourage your students to ask each other for help debugging their code if it does not run as expected, and to share ideas with each other.</p>
+
+    <div class="extension">
+      <p><strong>Extension idea</strong></p>
+      <p>By combining pictures with <strong><font color=#1E90FF>pause</font></strong> blocks, you can create animations.</p>
+      <p>Change the number in this block to add longer or shorter pauses.</p>
+      <p>Try creating a set of images to make a character move across the screen.</p>
+      <p>Does it make a difference if your animation is inside <strong><font color=#1E90FF>on start</font></strong> or <strong><font color=#1E90FF>forever</font></strong>?</p>
+    </div>
+
+    <p>Some example code is below (click the <strong>Play</strong> button in middle to see it run, and the <strong>Edit</strong> button in the right to open it in the full editor).</p>
+    <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:_4o6J7qVw8Fgo" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
+  </div>
+
+  <div id="downloading" class="left">
+    <br>
+    <h3>Pairing your BBC micro:bit & Downloading Code</h3>
+    <p><strong>The way this works will depend on the device you are programming the micro:bit from, and your settings – it is highly recommended that you test this out before running the activity with your students, using their devices.</strong></p>
+    <div class="additional">
+      <p>The below instructions assume you are using a browser version of the MakeCode editor.</p>
+      <p>Until now, your students have been using the Simulator. Make sure that they have a working program before downloading it to the micro:bit!</p>
+    </div>
+    <p>Connect the micro:bit to the computer using the USB cable (it may take a moment to install drivers). It will be visible to your computer as though it were a USB stick or similar, and will be named MICROBIT.</p>
+    <p>Follow <a href="https://scienceoxford.github.io/do-your-bit/pair-microbit.html" target="_blank">these instructions</a> to pair your micro:bit.</p>
+    <p>If successful, clicking the <strong>Download</strong> button will send your code directly to the micro:bit.</p>
+    <p>If unsucessful, you can put code onto the micro:bit by dragging and dropping it from it's download location on your computer, onto the <strong>MICROBIT</strong> drive.</p>
+    <p><strong>Check that the code running on the micro:bit is the same as that running in the Simulator!</strong></p>
+  </div>
+
+  <div id=buttons class="left">
+    <br>
+    <h3>Step 5: Using the A & B Buttons</h3>
+    <p>So far, your students have been <strong>outputting</strong> information to the micro:bit.  You will now introduce them to <strong>inputs</strong>.</p>
+    <p>Ask them if they can name any outputs and inputs they use in regular life.</p>
+    <div class="additional">
+      <p>Example outputs: computer monitor, phone/ ipad screen, text message received…</p>
+      <p>Example inputs: computer mouse, light switch, text message typed…</p>
+    </div>
+    <p>In this lesson, your students will use the A & B buttons on the front of the micro:bit as inputs.</p>
+    <p>The blocks to control inputs are in the <strong><font color=#D400D4>Input</font></strong> menu.</p>
+    <p>The <strong><font color=#D400D4>on button A pressed</font></strong> block can be used instead of <strong><font color=#1E90FF>on start</font></strong> or <strong><font color=#1E90FF>forever</font></strong> to program when other blocks will run.</p>
+    <p>By clicking the arrow next to <strong><font color=#D400D4>A</font></strong> in this block, it can be modified to use button <strong><font color=#D400D4>A</font></strong>, <strong><font color=#D400D4>B</font></strong> or <strong><font color=#D400D4>A+B</font></strong> as the input.</p>
+    <p><strong>Challenge your students to make one thing happen when <font color=#D400D4>button A</font> is pressed, and something else happen when <font color=#D400D4>button B</font> is pressed.</strong></p>
+    <p>Encourage your students to keep downloading their updated programs to the micro:bit (instead of using the Simulator), to get used to the process.</p>
+    <p>Some example code is below (click the <strong>Play</strong> button in middle to see it run, and the <strong>Edit</strong> button in the right to open it in the full editor).</p>
+    <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:_gcWTWqJPo63L" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
+  </div>
+
+  <footer>
+    <br>
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+    <br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="scienceoxford.com" property="cc:attributionName" rel="cc:attributionURL">Science Oxford</a>
+    is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    <br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="scienceoxford.github.io/microbit-lesson-plans" rel="dct:source">scienceoxford.github.io/microbit-lesson-plans</a>.
+  </div>
+
+</body>
+
+</html>
