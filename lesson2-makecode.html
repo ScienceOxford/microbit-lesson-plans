@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>micro:bit lesson plans</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto Condensed:100,300,400,500,700,900" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Lesson 1: micro:bit thermometer</h1>
+  </header>
+
+  <div id="recap" class="left">
+    <br>
+    <h3>Step 1: Recap from Lesson 1</h3>
+    <p>It is worth spending a few minutes reminding students how to display images on the screen, and how to download and run their programs on the micro:bit.</p>
+  </div>
+
+  <div id="temperature" class="left">
+    <br>
+    <h3>Step 2: Displaying the Temperature</h3>
+    <p>The current temperature is not one set value, it changes. In computer programming, we call a changeable value a variable.</p>
+    <p><a href="https://www.bbc.co.uk/bitesize/topics/zs7s4wx/articles/zw3dwmn" target="_blank">BBC Bitesize - How do computer programs use variables?</a></p>
+    <p><strong>Run most of this lesson using the Simulator, so that your students can easily change the 'current temperature' to test their code.</strong></p>
+    <br>
+    <p>To display the temperature, students still only need to use the blocks in the <strong><font color=#1E90FF>Basic</font></strong> and <strong><font color=#D400D4>Input</font></strong> menus, but they will be combined together in new ways.</p>
+    <p>The <strong><font color=#1E90FF>show number 0</font></strong> block in the <strong><font color=#1E90FF>Basic</font></strong> menu scrolls numbers across the micro:bit's display - your students may have used this block during lesson 1. Place this block into a <strong><font color=#1E90FF>forever</font></strong> loop.</p>
+    <p>As well as changing the number in this block, an <strong><font color=#D400D4>Input</font></strong> can be placed within it, to display this instead.</p>
+    <p>Find the <strong><font color=#D400D4>temperature (<span>&#176;</span>C)</font></strong> block, and slot this into the number space within the <strong><font color=#1E90FF>show number 0</font></strong> block.</p>
+
+    <p>Some example code is below (click the <strong>Play</strong> button in middle to see it run, and the <strong>Edit</strong> button in the right to open it in the full editor).</p>
+    <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:_Lmxi27DJq8rL" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
+    <br>
+
+    <div class="extension">
+      <p><strong>Extension ideas</strong></p>
+      <ul>
+        <li>What happens if you place the new code inside <strong><font color=#1E90FF>on start</font></strong> instead of <strong><font color=#1E90FF>forever</font></strong>? Change the 'current temperature' using the Simulator to test the code.</li>
+        <li>Use some of the other blocks used in Lesson 1, such as <strong><font color=#1E90FF>pause</font></strong> and <strong><font color=#D400D4>on button A pressed</font></strong> to make a more interesting program.</li>
+        <li>Try the other, similar, blocks within the <strong><font color=#D400D4>Input</font></strong> menu, such as <strong><font color=#D400D4>light level</font></strong> and <strong><font color=#D400D4>compass heading (<span>&#176;</span>)</font></strong>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="conditionals" class="left">
+    <br>
+    <h3>Step 3: Selection</h3>
+    <p>Now you will introduce the concept of <strong>Selection</strong> in computer programming.</p>
+    <p><a href="https://www.bbc.co.uk/bitesize/topics/zkcqn39/articles/z23q7ty" target="_blank">BBC Bitesize - How do we get computers to do what we want?</a></p>
+    <p>These are <strong>if this then that</strong> statements, and they are found in the <strong><font color=#00a4a6>Logic</font></strong> menu.</p>
+    <p>Combine an <strong><font color=#00a4a6>if true then... else</font></strong> block with a <strong><font color=#00a4a6>0 = 0</font></strong> block and your <strong><font color=#D400D4>temperature</font></strong> input, to show one thing <strong><font color=#00a4a6>if</font></strong> the temperature is equal to a given number, and otherwise something <strong><font color=#00a4a6>else</font></strong>.</p>
+
+    <p>Some example code is below (click the <strong>Play</strong> button in middle to see it run, and the <strong>Edit</strong> button in the right to open it in the full editor).</p>
+    <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:_Mq0bRRdT2MLF" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
+
+    <br>
+
+    <div class="extension">
+      <p><strong>Extension idea - more complex statements</strong></p>
+      <p>Try using the other blocks in the <strong><font color=#00a4a6>Logic</font></strong> menu to make more complex statements e.g.</p>
+      <ul>
+        <li><strong><font color=#00a4a6>if</font> <font color=#D400D4>temperature</font> <font color=#00a4a6>></font> 20</strong></li>
+        <li><strong><font color=#00a4a6>if not</font> <font color=#D400D4>temperature</font> <font color=#00a4a6> = </font> 25 </strong></li>
+        <li><strong><font color=#00a4a6>if</font> <font color=#D400D4>temperature</font> <font color=#00a4a6> = </font> 25 <font color=#00a4a6>and</font> <font color=#D400D4>button A is pressed</font></strong>...</li>
+      </ul>
+      <p>You can add extra conditions to the statement by using the <strong><font color=#00a4a6>+</font></strong> symbol to add an <strong><font color=#00a4a6>else if ... then </font></strong> option.</p>
+    </div>
+
+    <br>
+
+    <div class="extension">
+      <p><strong>Extension idea - calibrating the temperature</strong></p>
+      <p>The temperature displayed on the micro:bit is the temperature of the micro:bit’s processor, not the room temperature. This means that it is always a little too high.</p>
+      <p>Set up two thermometers in different locations (e.g. by a radiator and the window).</p>
+      <p>Students can take their micro:bit over to that location and compare the temperature on the thermometer to the temperature shown by the micro:bit (note, it may take some time for the micro:bit to adjust to the new temperature).</p>
+      <p>By working out the difference, they can use the blocks in the <strong><font color=#9400d3>Math </font></strong> menu to calibrate their micro:bit to show a more accurate temperature reading.</p>
+      <p>Some example code is below (click the <strong>Play</strong> button in middle to see it run, and the <strong>Edit</strong> button in the right to open it in the full editor).</p>
+    </div>
+
+    <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:_a7Y6aUP60PP9" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
+
+  </div>
+
+  <footer>
+    <br>
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+    <br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://scienceoxford.com" property="cc:attributionName" rel="cc:attributionURL">Science Oxford</a>
+    is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    <br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://scienceoxford.github.io/microbit-lesson-plans" rel="dct:source">scienceoxford.github.io/microbit-lesson-plans</a>.
+  </footer>
+
+</body>
+
+</html>
